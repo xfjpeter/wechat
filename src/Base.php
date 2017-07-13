@@ -36,7 +36,7 @@ class Base extends Error
      */
     public function instance( $api )
     {
-        $class = '\\Org\\Wechat\\' . ucfirst( $api );
+        $class = '\\johnxu\\wechat\\' . ucfirst( $api );
 
         return new $class;
     }

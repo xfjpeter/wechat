@@ -1,7 +1,7 @@
 {
     "name": "johnxu/wechat",
     "description": "wechat package",
-    "keywords": "wecaht,许发君,johnxu,微信开发",
+    "keywords": ["wecaht","许发君","johnxu","微信开发"],
     "homepage": "http://www.johnxu.net",
     "license": "Apache License 2.0",
     "authors": [

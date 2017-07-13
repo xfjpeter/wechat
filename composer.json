@@ -2,7 +2,6 @@
     "name" : "johnxu/wechat" ,
     "description" : "wechat package" ,
     "homepage" : "http://www.johnxu.net" ,
-    "type" : "library" ,
     "license" : "Apache License 2.0" ,
     "authors" : [
         {

@@ -1,23 +1,24 @@
 {
-    "name" : "johnxu/wechat" ,
-    "description" : "wechat package" ,
-    "homepage" : "http://www.johnxu.net" ,
-    "license" : "Apache License 2.0" ,
-    "authors" : [
+    "name": "johnxu/wechat",
+    "description": "wechat package",
+    "keywords": "wecaht,许发君,johnxu,微信开发",
+    "homepage": "http://www.johnxu.net",
+    "license": "Apache License 2.0",
+    "authors": [
         {
-            "name" : "johnxu" ,
-            "email" : "fsyzxz@163.com"
+            "name": "johnxu",
+            "email": "fsyzxz@163.com"
         }
-    ] ,
-    "minimum-stability" : "stable" ,
+    ],
+    "minimum-stability": "stable",
     "require" : {
         "php" : ">=5.4.0"
-    } ,
-    "require-dev" : {} ,
-    "version" : "1.0.0-dev" ,
-    "autoload" : {
-        "psr-4" : {
-            "johnxu\\wechat\\" : "src/"
+    },
+    "require-dev": {},
+    "version": "1.0.0-dev",
+    "autoload": {
+        "psr-4": {
+            "johnxu\\wechat\\": "src/"
         }
     }
 }

@@ -35,12 +35,19 @@ class Config
      * 设置配置文件值
      * @param string $key
      * @param string $value
+     * @return bool
      */
     public static function set( $key, $value )
     {
-        if ( array_key_exists( $key, self::$_config ) ) {
-            self::$_config[ $key ] = $value;
+        $tmp = &self::$_config;
+        foreach ( explode( '.', $key ) as $d ) {
+            if ( ! isset( $tmp[ $d ] ) ) {
+                $tmp[ $d ] = array();
+            }
+            $tmp = &$tmp[ $d ];
         }
+
+        return $tmp = $value;
     }
 
     /**
@@ -50,10 +57,15 @@ class Config
      */
     public static function get( $key )
     {
-        if ( array_key_exists( $key, self::$_config ) ) {
-            return self::$_config[ $key ];
+        $tmp = self::$_config;
+        foreach ( explode( '.', $key ) as $d ) {
+            if ( isset( $tmp[ $d ] ) ) {
+                $tmp = $tmp[ $d ];
+            } else {
+                return null;
+            }
         }
 
-        return false;
+        return $tmp;
     }
 }
